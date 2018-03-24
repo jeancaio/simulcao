@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Tabela de simulação</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <nav>
+     <div class="nav-wrapper black">
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="center">Tabela de simulação de lavagem</h1>
+    <div class="row">
+      <div class="col m4">
+        <h5 class="center">Tempo a ser simulado</h5>
+        <input type="text" name="" value="">
+      </div>
+
+      <div class="col m4 row">
+        <h5 class="center">TEC</h5>
+        <div class="col m4">
+          <input type="text" id="tec" value="">
+        </div>
+        <div class="col m2">
+          <a class="btn-floating btn-small waves-effect waves-light blue inserir-tec " data-position="botton" data-delay="50">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="col m6">
+          <span class="span-tec"></span>
+        </div>
+      </div>
+
+      <div class="col m4 row">
+        <h5 class="center">TS</h5>
+        <div class="col m4">
+          <input type="text" id="ts" value="">
+        </div>
+        <div class="col m2">
+          <a class="btn-floating btn-small waves-effect waves-light blue inserir-ts " data-position="botton" data-delay="50">
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+        <div class="col m6">
+          <span class="span-ts"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="row buttons">
+      <div class="col m6">
+        <button class="waves-effect waves-light btn" name="button">Simular</button>
+      </div>
+      <div class="col m6">
+        <button class="waves-effect waves-light btn" name="button">Limpar</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <table class="table tabel-simulação centered">
+        <head>
+          <th>Cliente</th>
+          <th>Tempo desde a última chegada (min)</th>
+          <th>Tempo de serviço (min)</th>
+          <th>Tempo inicial de serviço no relógio</th>
+          <th>Tempo do cliente na fila (min)</th>
+          <th>Tempo final de serviço no relógio</th>
+          <th>Tempo final do cliente no sistema (min)</th>
+          <th>Tempo livre do operador (min)</th>
+        </head>
+        <body>
+
+        </body>
+      </table>
+    </div>
+
+
+
+  </div>
+
+  <footer class="page-footer black">
+    <div class="footer-copyright">
+      <div class="container">
+          <strong>Copyright</strong> Jean Caio Andreolla &copy; CC2014 - URI
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</body>
+</html>
